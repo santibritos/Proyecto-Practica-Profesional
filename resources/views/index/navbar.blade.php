@@ -120,13 +120,10 @@
             <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item">
+          <a class="nav-link" href="#" role="button"  aria-expanded="false">
             Ayuda
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">?</a></li>
-          </ul>
         </li>
       </ul>
     </div>

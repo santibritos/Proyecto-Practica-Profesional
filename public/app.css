@@ -1,0 +1,52 @@
+.menu_wrapper
+{
+    position: absolute;
+    background-color: #7EA8BE;
+    height: 48px;
+    width: 100%;
+    
+}
+.navbar
+{
+    background-color: #326273;
+}
+.navbar-brand
+{
+    margin-right: 60px;
+}
+.nav-link
+{
+    
+    color: white;
+    user-select: #7EA8BE;
+}
+
+.nav-link:hover
+{
+    color:#7EA8BE;
+}
+.active
+{
+    color:#7EA8BE;
+    border-bottom: #7EA8BE;
+}
+
+
+.dropdown-menu
+{
+    background-color: #326273;
+}
+
+.dropdown-menu a
+{
+    color: white;
+}
+
+.dropdown-menu a:hover
+{
+    background-color: #7EA8BE;
+    color: white;
+}
+
+@media (max-width:668px) {.nav-link{text-align: center;}  
+}
