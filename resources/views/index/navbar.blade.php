@@ -17,8 +17,8 @@
             <li><a class="dropdown-item" href="#">Exportar listados</a></li>
             <li><a class="dropdown-item" href="#">Configurar impresoras</a></li>
             <li><a class="dropdown-item" href="#">Opciones</a></li>
-            <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
-            <li><a class="dropdown-item" href="#">Salir</a></li>
+            <li><a class="dropdown-item" href="/login">Cerrar sesion</a></li>
+            <li><a class="dropdown-item" href="/login">Salir</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
