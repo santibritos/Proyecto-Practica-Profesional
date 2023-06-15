@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('index.login');
 });
 
-Route::get('/menu', function () {
+Route::get('login', function () {
+    return view('index.login');
+});
+
+Route::get('menu', function () {
     return view('index.menu');
+});
+
+Route::get('navbar', function () {
+    return view('index.navbar');
+});
+
+Route::get('plantilla', function () {
+    return view('index.plantilla');
 });
