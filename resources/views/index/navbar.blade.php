@@ -1,8 +1,9 @@
 @extends('index.plantilla')
 @section('content1')
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">SACC</a>
+<div class="menu_wrapper">
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">  
+    <a class="navbar-brand" style="color:white" href="#">SACC</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,7 +13,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Archivo
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu active">
             <li><a class="dropdown-item" href="#">Exportar listados</a></li>
             <li><a class="dropdown-item" href="#">Configurar impresoras</a></li>
             <li><a class="dropdown-item" href="#">Opciones</a></li>
@@ -120,14 +121,19 @@
             <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" role="button"  aria-expanded="false">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" aria-expanded="false">
             Ayuda
           </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">?</a></li>
+          </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+</div>
 @yield('content')
 @endsection
