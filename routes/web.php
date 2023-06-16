@@ -44,4 +44,7 @@ Route::get('/subcuenta', function () {
 Route::get('/carreras', function(){
     return view('tablasMaestras.carreras');
 });
+Route::get('/area', function () {
+    return view('/tablasMaestras.area');
+});
 
