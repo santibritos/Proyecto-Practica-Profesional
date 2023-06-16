@@ -21,6 +21,10 @@ Route::get('login', function () {
     return view('index.login');
 });
 
+Route::get('crearUsuario', function () {
+    return view('index.crearUsuario');
+});
+
 Route::get('menu', function () {
     return view('index.menu');
 });

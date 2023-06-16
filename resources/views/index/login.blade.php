@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,30 +18,21 @@
       <section class="main">
     <body>
         <div class="login-container">
-        <form action="/menu" method="get" onsubmit="return validateForm()">
+        <form action="/menu" method="get">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="email1" name="email">
+            <input type="email" class="form-control" id="email1" name="email" required>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password1" name="password">
+            <input type="password" class="form-control" id="password1" name="password" required>
           </div>
           <button type="submit" class="btn btn-primary">Iniciar sesión</button>
         </form>
+        <div class="crear-usuario">
+          ¿No tienes una cuenta? <a href="/crearUsuario">Crear usuario</a>
         </div>
-
-        <script>
-        function validateForm() {
-          var email = document.getElementById('email1').value;
-          var password = document.getElementById('password1').value;
-
-          if (email.trim() === '' || password.trim() === '') {
-            alert('Por favor, complete todos los campos.');
-            return false;
-          }
-        }
-        </script>
+        </div>
 
       </section> 
     </body>
