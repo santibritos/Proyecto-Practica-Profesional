@@ -134,7 +134,7 @@
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
-                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Eliminar</button>
+                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Cancelar</button>
               </div>
             </div>
           </div>
