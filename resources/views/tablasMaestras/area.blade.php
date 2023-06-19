@@ -5,6 +5,7 @@
 <br>
 <br>
 
+
 <div class="lineal">
 
     <h1>Areas</h1>
@@ -96,7 +97,9 @@
     </div>
     <div class="margin-div" >
       
-         <button type="submit" class="btn btn-primary mb-3 custom-button">Agregar</button>
+        
+        
+        <button type="submit" class="btn btn-primary mb-3 custom-button" id="btn-agregar" data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar</button>
         <br>
         <button type="submit" class="btn btn-primary mb-3 custom-button">Modificar</button>
         <br>
@@ -107,9 +110,45 @@
         </div>
 </div>
 
+<div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="modalAgregar" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="card">
+          <div class="card text-left text-bg-dark">
+            <div class="card-header">
+              Datos del Area
+            </div>
+            <div class="card-body">
+              <div class="col">
+                <div class="row">
+                  <label class="col-sm-3 col-form-label">Codigo del Area</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="txtCodArea" placeholder="Codigo de Area">
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="col-sm-3 col-form-label">Nombre del Area</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="txtNombre" placeholder="Nombre de Cuenta">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
+                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Eliminar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
- 
-  
+
+
+
+
+
+
     </div>
  
 
