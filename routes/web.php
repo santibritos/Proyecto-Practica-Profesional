@@ -36,3 +36,7 @@ Route::get('navbar', function () {
 Route::get('plantilla', function () {
     return view('index.plantilla');
 });
+
+Route::get('cuenta', function () {
+    return view('index.cuenta');
+});
