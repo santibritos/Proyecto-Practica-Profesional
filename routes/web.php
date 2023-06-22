@@ -40,3 +40,7 @@ Route::get('plantilla', function () {
 Route::get('cuenta', function () {
     return view('index.cuenta');
 });
+
+Route::get('subcuenta', function () {
+    return view('index.subcuenta');
+});
