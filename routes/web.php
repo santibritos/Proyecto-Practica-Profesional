@@ -47,4 +47,6 @@ Route::get('/carreras', function(){
 Route::get('/area', function () {
     return view('/tablasMaestras.area');
 });
-
+Route::get('/sector', function () {
+    return view('/tablasMaestras.sector');
+});

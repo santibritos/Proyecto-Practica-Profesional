@@ -41,10 +41,10 @@
             <li><a class="dropdown-item" href="#">Tipos de Monedas</a></li>
             <li><a class="dropdown-item" href="#">Tipos de Gastos</a></li>
             <li><a class="dropdown-item" href="#">Subtipos de Gastos</a></li>
-            <li><a class="dropdown-item" href="#">Areas</a></li>
-            <li><a class="dropdown-item" href="#">Sectores</a></li>
+            <li><a class="dropdown-item" href="/area">Areas</a></li>
+            <li><a class="dropdown-item" href="/sector">Sectores</a></li>
             <li><a class="dropdown-item" href="/cuenta">Cuentas</a></li>
-            <li><a class="dropdown-item" href="#">Sub-Cuentas</a></li>
+            <li><a class="dropdown-item" href="/subcuenta">Sub-Cuentas</a></li>
             <li><a class="dropdown-item" href="#">Localidades</a></li>
             <li><a class="dropdown-item" href="#">Provincias</a></li>
             <li><a class="dropdown-item" href="#">Tarjetas de Crédito/Débito</a></li>
