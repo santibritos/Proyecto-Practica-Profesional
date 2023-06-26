@@ -25,7 +25,7 @@ Route::get('crearUsuario', function () {
     return view('index.crearUsuario');
 });
 
-Route::get('menu', function () {
+Route::get('/menu', function () {
     return view('index.menu');
 });
 
@@ -33,10 +33,20 @@ Route::get('navbar', function () {
     return view('index.navbar');
 });
 
-Route::get('plantilla', function () {
-    return view('index.plantilla');
+Route::get('/cuenta', function () {
+    return view('/tablasMaestras.cuenta');
 });
 
-Route::get('cuenta', function () {
-    return view('index.cuenta');
+Route::get('/subcuenta', function () {
+    return view('/tablasMaestras.subcuenta');
+});
+
+Route::get('/carreras', function(){
+    return view('tablasMaestras.carreras');
+});
+Route::get('/area', function () {
+    return view('/tablasMaestras.area');
+});
+Route::get('/sector', function () {
+    return view('/tablasMaestras.sector');
 });

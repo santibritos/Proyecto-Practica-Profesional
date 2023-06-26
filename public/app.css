@@ -50,3 +50,13 @@
 
 @media (max-width:668px) {.nav-link{text-align: center;}  
 }
+.table-rounded {
+    
+    border-radius: 10px; /* Ajusta el valor según tu preferencia */
+    overflow: hidden;
+  }
+
+  .table-container {
+    display: flex;
+    align-items: flex-start;
+}
