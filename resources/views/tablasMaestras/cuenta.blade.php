@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-sm-6">
             <div class="form-group row">
-              <label  class="col-sm-4 col-form-label">Codigo de Cuenta</label>
+              <label class="col-sm-4 col-form-label">Codigo de Cuenta</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control" id="txtcodigo" placeholder="Codigo de Cuenta">
               </div>
@@ -24,7 +24,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group row">
-              <label  class="col-sm-4 col-form-label">Nombre de Cuenta</label>
+              <label class="col-sm-4 col-form-label">Nombre de Cuenta</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control" id="txtnombre" placeholder="Nombre de Cuenta">
               </div>
@@ -105,7 +105,7 @@
           </table>
         </div>
     </div>
-    <div class="margin-div" >
+    <div class="margin-div">
       <button type="submit" class="btn btn-primary mb-3 custom-button" href="#" data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar</button>
       <br>
       <button type="submit" class="btn btn-primary mb-3 custom-button">Modificar</button>
@@ -120,25 +120,38 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="card ">
+        <div class="card">
           <div class="card text-left text-bg-dark">
             <div class="card-header">
-            Datos de la cuenta
+              Datos de la cuenta
             </div>
             <div class="card-body">
               <div class="col">
                 <div class="row">
-                <label  class="col-sm-4 col-form-label">Codigo de Cuenta</label>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="txtcodigo" placeholder="Codigo de Cuenta">
-                        </div>
-                  <label  class="col-sm-4 col-form-label">Nombre de Cuenta</label>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="txtnombre" placeholder="Nombre de Cuenta">
-                        </div>
-                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
+                  <label class="col-sm-3 col-form-label">Codigo de Cuenta</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="txtcodigo" placeholder="Codigo de Cuenta">
+                  </div>
                 </div>
-              </div>              
+                <div class="row">
+                  <label class="col-sm-3 col-form-label">Nombre de Cuenta</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="txtnombre" placeholder="Nombre de Cuenta">
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="col-sm-3 col-form-label">Sector</label>
+                  <div class="col-sm-9">
+                    <select class="form-select" id="ddlSector">
+                      <option value="1">Sector 1</option>
+                      <option value="2">Sector 2</option>
+                      <option value="3">Sector 3</option>
+                      <!-- Agrega más opciones según sea necesario -->
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
+              </div>
             </div>
           </div>
         </div>
@@ -147,6 +160,3 @@
   </div>
 </div>
 @endsection
-
-
-

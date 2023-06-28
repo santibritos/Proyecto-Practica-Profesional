@@ -3,7 +3,7 @@
 <div class="menu_wrapper">
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">  
-    <a class="navbar-brand" style="color:white" href="#">SACC</a>
+    <a class="navbar-brand" style="color:white" href="/menu">SACC</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,7 +37,7 @@
             Tablas Maestras
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Carreras</a></li>
+            <li><a class="dropdown-item" href="/carreras">Carreras</a></li>
             <li><a class="dropdown-item" href="#">Tipos de Monedas</a></li>
             <li><a class="dropdown-item" href="#">Tipos de Gastos</a></li>
             <li><a class="dropdown-item" href="#">Subtipos de Gastos</a></li>
