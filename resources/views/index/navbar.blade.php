@@ -135,5 +135,31 @@
 </nav>
 
 </div>
+<style>
+  .lineal {
+    width: 100%;
+    height:1000px;
+    background: -webkit-linear-gradient(top right, #7EA8BE, #0388cf);  
+  }
+
+   .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container > div {
+        width: 50%;
+    }
+    .probando {
+        width: 90%;
+        margin: 50px; 
+    }
+    .custom-button {
+        width: 200px; 
+    }
+    .margin-div{
+      margin:20px;
+    }
+</style>
 @yield('content')
 @endsection

@@ -1,32 +1,7 @@
 @extends('index.navbar')
 
 @section('content')
-<style>
-  .lineal {
-    width: 100%;
-    height:1000px;
-    background: -webkit-linear-gradient(top right, #7EA8BE, #0388cf);  
-  }
 
-   .container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .container > div {
-        width: 50%;
-    }
-    .probando {
-        width: 90%;
-        margin: 50px; 
-    }
-    .custom-button {
-        width: 200px; 
-    }
-    .margin-div{
-      margin:20px;
-    }
-</style>
 <br>
 <br>
 
@@ -48,7 +23,7 @@
                     <div class="form-group row">
                         <label  class="col-sm-4 col-form-label">Codigo de Area</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="txtcodigo" placeholder="codigo de area">
+                            <input type="text" class="form-control" id="txtcodigo" placeholder="Codigo de Area">
                         </div>
                     </div>
                 </div>
