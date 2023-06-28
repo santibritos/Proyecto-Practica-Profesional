@@ -119,5 +119,58 @@
       <button type="submit" class="btn btn-primary mb-3 custom-button">Ver todos</button>
     </div>
   </div>
+
+  <div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="modalAgregar" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <div class="card">
+                    <div class="card text-left text-bg-dark">
+                        <div class="card-header">
+                        &nbsp;&nbsp;&nbsp;SECTORES(AGREGAR)
+                        </div>
+                        <div class="card-body">
+
+                            <div class="col">
+                                <div class="row">
+                                    <h5> Datos del Sector</h5>
+                                    <label class="col-sm-3 col-form-label">Area</label>
+                                    <div class="col-sm-9 ">
+                                        <select class="form-select" id="ddlCuenta">
+                                            <option value="001">Area 1</option>
+                                            <option value="002">Area 2</option>
+                                            <option value="003">Area 3</option>
+                                        </select>
+                                    </div>
+
+                                    <label class="col-sm-3 col-form-label">Código del Sector</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="txtcodigo1"
+                                                placeholder="Cód. del Str.">
+                                            <input type="text" class="form-control" id="txtcodigo2"
+                                                placeholder="Código de Sector" style="width: 350px;">
+                                        </div>
+                                    </div>
+
+                                    <label class="col-sm-3 col-form-label">Nombre del Sector</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="txtnombre"
+                                            placeholder="Nombre del Sector">
+                                    </div>
+
+                                    <button type="submit"
+                                        class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 @endsection
