@@ -123,20 +123,27 @@
         <div class="card">
           <div class="card text-left text-bg-dark">
             <div class="card-header">
-              Datos de la cuenta
+            <h5> Datos de la cuenta</h5>
             </div>
             <div class="card-body">
+
               <div class="col">
                 <div class="row">
-                  <label class="col-sm-3 col-form-label">Codigo de Cuenta</label>
+                <label class="col-sm-3 col-form-label">Nombre de Cuenta</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="txtcodigo" placeholder="Codigo de Cuenta">
+                    <input type="text" class="form-control" id="txtnombre" placeholder="Nombre de Cuenta">
                   </div>
                 </div>
                 <div class="row">
-                  <label class="col-sm-3 col-form-label">Nombre de Cuenta</label>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control" id="txtnombre" placeholder="Nombre de Cuenta">
+                <label class="col-sm-3 col-form-label">Codigo de Cuenta</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                      <div class="col-sm-3">
+                       <input type="text" class="form-control" id="txtcodigo1" placeholder="Cód. de Cuenta."> 
+                     </div>
+                     <div class="col-sm-9">
+                       <input type="text" class="form-control" id="txtcodigo2" placeholder="Código de Cuenta">
+                     </div>
                   </div>
                 </div>
                 <div class="row">
@@ -160,3 +167,4 @@
   </div>
 </div>
 @endsection
+
