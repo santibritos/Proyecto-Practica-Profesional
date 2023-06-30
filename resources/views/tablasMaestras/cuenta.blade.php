@@ -157,7 +157,8 @@
                     </select>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
+                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button" onclick="agregar()">Agregar</button>
+                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button" onclick="cerrarVentana()">Cancelar</button>
               </div>
             </div>
           </div>
@@ -166,5 +167,23 @@
     </div>
   </div>
 </div>
+
+<script>
+  function cerrarVentana() {
+    $('#modalAgregar').modal('toggle');
+  }
+
+  function agregar() {
+        var codigoCuenta1 = $('#txtcodigo1').val();
+        var codigoCuenta2 = $('#txtcodigo2').val();
+        var nombreCuenta = $('#txtnombre').val();
+
+        if (codigoCuenta1 === '' || codigoCuenta2 === '' || nombreCuenta === '') { 
+            alert("Complete todos los campos");
+        } else {
+                alert("Cuenta agregada con éxito");
+            }
+}
+</script>
 @endsection
 
