@@ -130,11 +130,11 @@
                 <div class="row">
                   <label class="col-sm-3 col-form-label">Nombre del Area</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="txtNombre" placeholder="Nombre de Cuenta">
+                    <input type="text" class="form-control" id="txtNombre" placeholder="Nombre de Area">
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
-                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Cancelar</button>
+                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button" onclick="agregar()">Agregar</button>
+                <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button" onclick="cerrarVentana()">Cancelar</button>
               </div>
             </div>
           </div>
@@ -142,14 +142,22 @@
       </div>
     </div>
   </div>
+</div>
 
+<script>
+  function cerrarVentana() {
+    $('#modalAgregar').modal('toggle');
+  }
 
+  function agregar() {
+        var codigoArea = $('#txtCodArea').val();
+        var nombreArea = $('#txtNombre').val();
 
-
-
-
-
-    </div>
- 
-
+        if (codigoArea === '' || nombreArea === '') {
+            alert("Complete todos los campos");
+        } else {
+                alert("Área agregada con éxito");
+            }
+}
+</script>
 @endsection

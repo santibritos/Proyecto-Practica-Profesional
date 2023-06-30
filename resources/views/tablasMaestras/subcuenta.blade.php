@@ -136,15 +136,24 @@
                 </div>
                 <div class="card-body">
                   <div class="col">
-                    <div class="row">
-                      <label class="col-sm-4 col-form-label">Codigo de Subcuenta</label>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="txtcodigo" placeholder="Codigo de Subcuenta">
-                      </div>
-                      <label class="col-sm-4 col-form-label">Nombre de Subcuenta</label>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="txtnombre" placeholder="Nombre de Subcuenta">
-                      </div>
+                <div class="row">
+                <label class="col-sm-3 col-form-label">Nombre de Cuenta</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="txtnombreSCuenta" placeholder="Nombre de Subcuenta">
+                  </div>
+                </div>
+                <div class="row">
+                <label class="col-sm-3 col-form-label">Codigo de Cuenta</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                      <div class="col-sm-3">
+                       <input type="text" class="form-control" id="txtcodigoSCuenta1" placeholder="Cód. de Subcuenta."> 
+                     </div>
+                     <div class="col-sm-9">
+                       <input type="text" class="form-control" id="txtcodigoSCuenta2" placeholder="Código de Subcuenta">
+                     </div>
+                  </div>
+                </div>
                       <label class="col-sm-4 col-form-label">Cuenta</label>
                       <div class="col-sm-8">
                         <select class="form-control" id="ddlCuenta">
@@ -164,7 +173,8 @@
                           <!-- Agregar más opciones según sea necesario -->
                         </select>
                       </div>
-                      <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
+                      <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button" onclick="agregar()">Agregar</button>
+                      <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button" onclick="cerrarVentana()">Cancelar</button>
                     </div>
                   </div>
                 </div>
@@ -176,4 +186,25 @@
     </div>
 
   </div>
+
+<script>
+  function cerrarVentana() {
+ 
+    $('#modalAgregar').modal('toggle');
+  }
+
+  function agregar() {
+        var codigoSCuenta1 = $('#txtcodigoSCuenta1').val();
+        var codigoSCuenta2 = $('#txtcodigoSCuenta2').val();
+        var nombreSCuenta = $('#txtnombreSCuenta').val();
+        
+
+        if (codigoSCuenta1 === '' || codigoSCuenta2 === '' || nombreSCuenta === '') {
+            alert("Complete todos los campos");
+        } else {
+                alert("Subcuenta agregada con éxito");
+            }
+}
+</script>
+
 @endsection

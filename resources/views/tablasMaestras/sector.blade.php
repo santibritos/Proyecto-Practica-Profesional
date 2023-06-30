@@ -160,8 +160,8 @@
                                             placeholder="Nombre del Sector">
                                     </div>
 
-                                    <button type="submit"
-                                        class="btn btn-primary mb-3 mt-3 custom-button">Agregar</button>
+                                    <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button" onclick="agregar()">Agregar</button>
+                                    <button type="submit" class="btn btn-primary mb-3 mt-3 custom-button" onclick="cerrarVentana()">Cancelar</button>
                                 </div>
                             </div>
                         </div>
@@ -173,4 +173,23 @@
 </div>
 
 </div>
+
+<script>
+  function cerrarVentana() {
+    $('#modalAgregar').modal('toggle');
+  }
+
+  function agregar() {
+        var codigoSector1 = $('#txtcodigo1').val();
+        var codigoSector2 = $('#txtcodigo2').val();
+        var nombreSector = $('#txtnombre').val();
+
+        if (codigoSector1 === '' || codigoSector2 === '' || nombreSector === '') {
+            alert("Complete todos los campos");
+        } else {
+
+                alert("Sector agregado con éxito");
+            }
+}
+</script>
 @endsection
